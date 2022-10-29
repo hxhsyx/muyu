@@ -1,0 +1,47 @@
+<view >
+    <view class="word">功德：{{count}}</view>
+    <view class="marquee_container" style="--marqueeWidth--:-12em">
+        <view class="marquee_text">一称「南无阿弥陀佛」，十方诸佛自然护念。</view>
+    </view>
+    <view class="ripple" style="{{rippleStyle}}"></view>
+    <image animation="{{animationData}}" class="muyuicon" src="{{bgurl}}" />
+    <view class="container" bindtouchstart="containerTap" bindtap="index"></view>
+    <view>
+	    <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+            <swiper-item><image src='../../image/a.jpeg'></image></swiper-item>
+            <swiper-item><image src='../../image/b.jpeg'></image></swiper-item>
+	    </swiper>
+    </view>
+<!-- <image src="{{checked?'../../image/yf.png':'../../image/yf.png'}}" class="music {{!checked && 'circle'}}" catchtap="checkMusic"></image> -->
+
+<text class="text" style="left: {{text_ax}}px;top: {{text_ay}}px;opacity: {{opacity_a}};" wx:if="{{text_a}}">
+ {{text_a}}
+</text>
+<text class="text" style="left: {{text_bx}}px;top: {{text_by}}px;opacity: {{opacity_b}};" wx:if="{{text_b}}">
+ {{text_b}}
+</text>
+<text class="text" style="left: {{text_cx}}px;top: {{text_cy}}px;opacity: {{opacity_c}};" wx:if="{{text_c}}">
+ {{text_c}}
+</text>
+<text class="text" style="left: {{text_dx}}px;top: {{text_dy}}px;opacity: {{opacity_d}};" wx:if="{{text_d}}">
+ {{text_d}}
+</text>
+<text class="text" style="left: {{text_ex}}px;top: {{text_ey}}px;opacity: {{opacity_e}};" wx:if="{{text_e}}">
+ {{text_e}}
+</text>
+<text class="text" style="left: {{text_fx}}px;top: {{text_fy}}px;opacity: {{opacity_f}};" wx:if="{{text_f}}">
+ {{text_f}}
+</text>
+<text class="text" style="left: {{text_gx}}px;top: {{text_gy}}px;opacity: {{opacity_g}};" wx:if="{{text_g}}">
+ {{text_g}}
+</text>
+<text class="text" style="left: {{text_hx}}px;top: {{text_hy}}px;opacity: {{opacity_h}};" wx:if="{{text_h}}">
+ {{text_h}}
+</text>
+<text class="text" style="left: {{text_ix}}px;top: {{text_iy}}px;opacity: {{opacity_i}};" wx:if="{{text_i}}">
+ {{text_i}}
+</text>
+<text class="text" style="left: {{text_jx}}px;top: {{text_jy}}px;opacity: {{opacity_j}};" wx:if="{{text_j}}">
+ {{text_j}}
+</text>
+</view>

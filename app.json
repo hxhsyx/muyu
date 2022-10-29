@@ -1,0 +1,31 @@
+{
+    "pages": [
+        "pages/muyu/muyu",
+        "pages/zhiyin/muyu"
+    ],
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/muyu/muyu",
+                "text": "电子木鱼",
+                "iconPath": "image/muyu4.png",
+                "selectedIconPath": "image/muyu5.png"
+            },
+            {
+                "pagePath": "pages/zhiyin/muyu",
+                "text": "电子木只因",
+                "iconPath": "image/muyu4.png",
+                "selectedIconPath": "image/muyu5.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundColor": "#F6F6F6",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F6F6F6",
+        "navigationBarTitleText": "电子木鱼",
+        "navigationBarTextStyle": "black"
+    },    
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

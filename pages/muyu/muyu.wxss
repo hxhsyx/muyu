@@ -1,0 +1,140 @@
+page{
+    background-color:#fff;
+    height: 100%;
+}
+/* .music {
+    width: 86rpx;
+    height: 86rpx;
+    position: absolute;
+    top: 550rpx;
+    right: 10rpx;
+    z-index: 99;
+  } */
+  .circle {
+    animation: cirlce 4s linear infinite;
+  }
+  @keyframes cirlce {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+  /* .btn {
+    margin: 550rpx auto 0;
+    width: 625rpx;
+    height: 80rpx;
+    background: linear-gradient(90deg, #dd8449 0%, #e28e74 52%, #dbb290 100%);
+    border-radius: 6rpx;
+    font-size: 30rpx;
+    color: #fff;
+    line-height: 80rpx;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .btn:after {
+    content: "";
+    background: #999;
+    position: absolute;
+    width: 750rpx;
+    height: 750rpx;
+    left: calc(50% - 375rpx);
+    top: calc(50% - 375rpx);
+    opacity: 0;
+    margin: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+  } */
+.word{
+    font-size:64rpx;
+    color:black;
+    text-align:center;
+}
+.container{
+    width:100%;
+    height:80vh;
+    z-index: 3;
+    position: absolute;
+}
+.muyuicon{
+  /* 164：236 */
+    width: 708rpx;
+    height: 492rpx;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0rpx;
+    top: 500rpx;
+    z-index: 1;
+    margin: auto;
+}
+/* 涟漪 */
+.ripple {
+    background-color: rgba(182, 182, 182, 0.6);
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    margin-top: -90px;
+    position: absolute;
+    -webkit-transform: scale(0);
+}
+.text{
+    color:black;
+    position: absolute;
+    transition: all 1s;
+    font-size: 48rpx;
+    z-index: 9999;
+    white-space: nowrap;
+    overflow:hidden;
+}
+.lunbo{
+	width:100%
+}
+.lunbo image{
+	width:100%
+}
+@-webkit-keyframes ripple {
+    100% {
+    -webkit-transform: scale(12);
+    transform: scale(12);
+    background-color: transparent;
+    }
+    
+}
+@keyframes around {
+    from {
+     margin-left: 100%;
+    }
+    to {
+     /* var接受传入的变量 */
+     margin-left: var(--marqueeWidth--);
+    }
+    }
+    /* 滚动字幕背景 */
+   .marquee_container{
+    background: -webkit-linear-gradient(left,#e54d42,#f37b1d,#fbbd08,#39b54a,#1cbbb4,#0081ff,#6739b6);
+    height: 100rpx;
+    line-height: 88rpx;
+    position: relative;
+    width: 100%;
+    margin-top:0rpx;
+   }
+   .marquee_container:hover{
+    /* 不起作用 */
+    animation-play-state: paused;
+   }
+   .marquee_text{
+    flex-direction: row;
+    color:#fff;
+    font-size: 48rpx;
+    align-items: center;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: around;
+    animation-duration: 15s; /*过渡时间*/
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   }
